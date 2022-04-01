@@ -30,7 +30,6 @@ load("@com_lowrisc_toolchain_rv32imc_compiler//:defs.bzl", "SYSTEM_INCLUDE_COMMA
 load("//toolchains/features/common:defs.bzl", "GetCommonFeatures")
 load("//toolchains/features/embedded:defs.bzl", "GetEmbeddedFeatures")
 
-_RISCV32_UNKNOWN_ELF_VERSION = "9.2.0"
 _CPP_ALL_COMPILE_ACTIONS = [
     ACTION_NAMES.assemble,
     ACTION_NAMES.preprocess_assemble,

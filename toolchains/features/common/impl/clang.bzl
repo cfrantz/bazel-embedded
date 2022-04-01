@@ -230,7 +230,7 @@ _DEBUG_FEATURE = feature(
             flag_groups = [
                 flag_group(
                     flags = [
-                        "-O0",
+                        "-O1",
                         "-g3",
                     ],
                 ),
@@ -257,7 +257,7 @@ _FASTBUILD_FEATURE = feature(
             flag_groups = [
                 flag_group(
                     flags = [
-                        "-O",
+                        "-O1",
                     ],
                 ),
             ],

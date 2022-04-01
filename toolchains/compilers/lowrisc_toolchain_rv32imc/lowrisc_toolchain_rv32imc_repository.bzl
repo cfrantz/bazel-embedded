@@ -56,8 +56,8 @@ lowrisc_toolchain_rv32imc_repository = repository_rule(
     _com_lowrisc_toolchain_rv32imc_repository_impl,
     attrs = {
         "version": attr.string(
-            default = "9",
-            doc = "Clang version, version 11 currently only version supported, it depends on lib/gcc 9.2.0 as far as I know",
+            default = "10",
+            doc = "Clang version, version 11 currently only version supported, it depends on lib/gcc 10.2.0 as far as I know",
             values = TOOLCHAIN_VERSIONS.keys(),
         ),
     },

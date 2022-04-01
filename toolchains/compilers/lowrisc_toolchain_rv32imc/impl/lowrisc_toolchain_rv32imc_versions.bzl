@@ -10,8 +10,20 @@ _PLATFORM_SPECIFIC_CONFIGS_9 = {
     },
 }
 
+_PLATFORM_SPECIFIC_CONFIGS_10 = {
+    "linux": {
+        "full_version": "10.2.0",
+        "remote_compiler": {
+            "url": "https://github.com/lowRISC/lowrisc-toolchains/releases/download/20220210-1/lowrisc-toolchain-rv32imc-20220210-1.tar.xz",
+            "sha256": "2c130136698a30327e6b4277b2c539a77246702bf88c9d9da97b58bf569b75c3",
+            "strip_prefix": "lowrisc-toolchain-rv32imc-20220210-1",
+        },
+    },
+}
+
 TOOLCHAIN_VERSIONS = {
     "9": _PLATFORM_SPECIFIC_CONFIGS_9,
+    "10": _PLATFORM_SPECIFIC_CONFIGS_10,
 }
 
 def get_platform_specific_config(version, os_name):

@@ -30,7 +30,6 @@ load("@com_lowrisc_toolchain_rv32imc_compiler//:defs.bzl", "SYSTEM_INCLUDE_COMMA
 load("//toolchains/features/common:defs.bzl", "GetCommonFeatures")
 load("//toolchains/features/embedded:defs.bzl", "GetEmbeddedFeatures")
 
-_RISCV32_UNKNOWN_ELF_VERSION = "9.2.0"
 _CPP_ALL_COMPILE_ACTIONS = [
     ACTION_NAMES.assemble,
     ACTION_NAMES.preprocess_assemble,
@@ -149,7 +148,7 @@ def _lowrisc_toolchain_rv32imc_toolchain_config_info_impl(ctx):
         target_system_name = "riscv32-unknown-elf",
         target_cpu = ctx.attr.architecture,
         target_libc = "unknown",
-        compiler = "riscv32-unknown-elf-gcc",
+        compiler = "riscv32-unknown-elf-clang",
         abi_version = "unknown",
         abi_libc_version = "unknown",
         tool_paths = tool_paths,
